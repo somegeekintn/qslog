@@ -10,4 +10,7 @@
 
 @interface QSViewController : UIViewController
 
+- (IBAction)	handleLogUpload: (id) inSender;
+- (IBAction)	handleLogRequest: (id) inSender;
+
 @end

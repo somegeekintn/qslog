@@ -16,22 +16,10 @@
 		C9F48FA418E4BAD400AB2DC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9F48FA218E4BAD400AB2DC1 /* Main.storyboard */; };
 		C9F48FA718E4BAD400AB2DC1 /* QSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F48FA618E4BAD400AB2DC1 /* QSViewController.m */; };
 		C9F48FA918E4BAD400AB2DC1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9F48FA818E4BAD400AB2DC1 /* Images.xcassets */; };
-		C9F48FB018E4BAD400AB2DC1 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9F48FAF18E4BAD400AB2DC1 /* XCTest.framework */; };
-		C9F48FB118E4BAD400AB2DC1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9F48F9018E4BAD400AB2DC1 /* Foundation.framework */; };
-		C9F48FB218E4BAD400AB2DC1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9F48F9418E4BAD400AB2DC1 /* UIKit.framework */; };
-		C9F48FBA18E4BAD400AB2DC1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9F48FB818E4BAD400AB2DC1 /* InfoPlist.strings */; };
-		C9F48FBC18E4BAD400AB2DC1 /* QSLogTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F48FBB18E4BAD400AB2DC1 /* QSLogTests.m */; };
+		C9F48FC718E4BB3C00AB2DC1 /* DropboxSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9F48FC618E4BB3C00AB2DC1 /* DropboxSDK.framework */; };
+		C9F48FCA18E4C6D000AB2DC1 /* QSSimpleLog.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F48FC918E4C6D000AB2DC1 /* QSSimpleLog.m */; };
+		C9F48FCD18E4D82800AB2DC1 /* QSUploadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = C9F48FCC18E4D82800AB2DC1 /* QSUploadOperation.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		C9F48FB318E4BAD400AB2DC1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C9F48F8518E4BAD400AB2DC1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C9F48F8C18E4BAD400AB2DC1;
-			remoteInfo = QSLog;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		C9F48F8D18E4BAD400AB2DC1 /* QSLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QSLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,11 +36,12 @@
 		C9F48FA518E4BAD400AB2DC1 /* QSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QSViewController.h; sourceTree = "<group>"; };
 		C9F48FA618E4BAD400AB2DC1 /* QSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QSViewController.m; sourceTree = "<group>"; };
 		C9F48FA818E4BAD400AB2DC1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		C9F48FAE18E4BAD400AB2DC1 /* QSLogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QSLogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9F48FAF18E4BAD400AB2DC1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		C9F48FB718E4BAD400AB2DC1 /* QSLogTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QSLogTests-Info.plist"; sourceTree = "<group>"; };
-		C9F48FB918E4BAD400AB2DC1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		C9F48FBB18E4BAD400AB2DC1 /* QSLogTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QSLogTests.m; sourceTree = "<group>"; };
+		C9F48FC618E4BB3C00AB2DC1 /* DropboxSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DropboxSDK.framework; path = QSLog/External/DropboxSDK.framework; sourceTree = "<group>"; };
+		C9F48FC818E4C6D000AB2DC1 /* QSSimpleLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSSimpleLog.h; sourceTree = "<group>"; };
+		C9F48FC918E4C6D000AB2DC1 /* QSSimpleLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSSimpleLog.m; sourceTree = "<group>"; };
+		C9F48FCB18E4D82800AB2DC1 /* QSUploadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSUploadOperation.h; sourceTree = "<group>"; };
+		C9F48FCC18E4D82800AB2DC1 /* QSUploadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSUploadOperation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,19 +49,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9F48FC718E4BB3C00AB2DC1 /* DropboxSDK.framework in Frameworks */,
 				C9F48F9318E4BAD400AB2DC1 /* CoreGraphics.framework in Frameworks */,
 				C9F48F9518E4BAD400AB2DC1 /* UIKit.framework in Frameworks */,
 				C9F48F9118E4BAD400AB2DC1 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C9F48FAB18E4BAD400AB2DC1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C9F48FB018E4BAD400AB2DC1 /* XCTest.framework in Frameworks */,
-				C9F48FB218E4BAD400AB2DC1 /* UIKit.framework in Frameworks */,
-				C9F48FB118E4BAD400AB2DC1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				C9F48F9618E4BAD400AB2DC1 /* QSLog */,
-				C9F48FB518E4BAD400AB2DC1 /* QSLogTests */,
+				C9F48FC518E4BB1800AB2DC1 /* External */,
 				C9F48F8F18E4BAD400AB2DC1 /* Frameworks */,
 				C9F48F8E18E4BAD400AB2DC1 /* Products */,
 			);
@@ -93,7 +73,6 @@
 			isa = PBXGroup;
 			children = (
 				C9F48F8D18E4BAD400AB2DC1 /* QSLog.app */,
-				C9F48FAE18E4BAD400AB2DC1 /* QSLogTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,9 +93,13 @@
 			children = (
 				C9F48F9F18E4BAD400AB2DC1 /* QSAppDelegate.h */,
 				C9F48FA018E4BAD400AB2DC1 /* QSAppDelegate.m */,
-				C9F48FA218E4BAD400AB2DC1 /* Main.storyboard */,
+				C9F48FC818E4C6D000AB2DC1 /* QSSimpleLog.h */,
+				C9F48FC918E4C6D000AB2DC1 /* QSSimpleLog.m */,
+				C9F48FCB18E4D82800AB2DC1 /* QSUploadOperation.h */,
+				C9F48FCC18E4D82800AB2DC1 /* QSUploadOperation.m */,
 				C9F48FA518E4BAD400AB2DC1 /* QSViewController.h */,
 				C9F48FA618E4BAD400AB2DC1 /* QSViewController.m */,
+				C9F48FA218E4BAD400AB2DC1 /* Main.storyboard */,
 				C9F48FA818E4BAD400AB2DC1 /* Images.xcassets */,
 				C9F48F9718E4BAD400AB2DC1 /* Supporting Files */,
 			);
@@ -134,22 +117,12 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		C9F48FB518E4BAD400AB2DC1 /* QSLogTests */ = {
+		C9F48FC518E4BB1800AB2DC1 /* External */ = {
 			isa = PBXGroup;
 			children = (
-				C9F48FBB18E4BAD400AB2DC1 /* QSLogTests.m */,
-				C9F48FB618E4BAD400AB2DC1 /* Supporting Files */,
+				C9F48FC618E4BB3C00AB2DC1 /* DropboxSDK.framework */,
 			);
-			path = QSLogTests;
-			sourceTree = "<group>";
-		};
-		C9F48FB618E4BAD400AB2DC1 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				C9F48FB718E4BAD400AB2DC1 /* QSLogTests-Info.plist */,
-				C9F48FB818E4BAD400AB2DC1 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
+			name = External;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,24 +145,6 @@
 			productReference = C9F48F8D18E4BAD400AB2DC1 /* QSLog.app */;
 			productType = "com.apple.product-type.application";
 		};
-		C9F48FAD18E4BAD400AB2DC1 /* QSLogTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C9F48FC218E4BAD400AB2DC1 /* Build configuration list for PBXNativeTarget "QSLogTests" */;
-			buildPhases = (
-				C9F48FAA18E4BAD400AB2DC1 /* Sources */,
-				C9F48FAB18E4BAD400AB2DC1 /* Frameworks */,
-				C9F48FAC18E4BAD400AB2DC1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C9F48FB418E4BAD400AB2DC1 /* PBXTargetDependency */,
-			);
-			name = QSLogTests;
-			productName = QSLogTests;
-			productReference = C9F48FAE18E4BAD400AB2DC1 /* QSLogTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -199,11 +154,6 @@
 				CLASSPREFIX = QS;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Quiet Spark";
-				TargetAttributes = {
-					C9F48FAD18E4BAD400AB2DC1 = {
-						TestTargetID = C9F48F8C18E4BAD400AB2DC1;
-					};
-				};
 			};
 			buildConfigurationList = C9F48F8818E4BAD400AB2DC1 /* Build configuration list for PBXProject "QSLog" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -219,7 +169,6 @@
 			projectRoot = "";
 			targets = (
 				C9F48F8C18E4BAD400AB2DC1 /* QSLog */,
-				C9F48FAD18E4BAD400AB2DC1 /* QSLogTests */,
 			);
 		};
 /* End PBXProject section */
@@ -235,14 +184,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C9F48FAC18E4BAD400AB2DC1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C9F48FBA18E4BAD400AB2DC1 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -250,29 +191,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9F48FCA18E4C6D000AB2DC1 /* QSSimpleLog.m in Sources */,
 				C9F48FA718E4BAD400AB2DC1 /* QSViewController.m in Sources */,
+				C9F48FCD18E4D82800AB2DC1 /* QSUploadOperation.m in Sources */,
 				C9F48FA118E4BAD400AB2DC1 /* QSAppDelegate.m in Sources */,
 				C9F48F9D18E4BAD400AB2DC1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C9F48FAA18E4BAD400AB2DC1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C9F48FBC18E4BAD400AB2DC1 /* QSLogTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		C9F48FB418E4BAD400AB2DC1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C9F48F8C18E4BAD400AB2DC1 /* QSLog */;
-			targetProxy = C9F48FB318E4BAD400AB2DC1 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C9F48F9918E4BAD400AB2DC1 /* InfoPlist.strings */ = {
@@ -289,14 +216,6 @@
 				C9F48FA318E4BAD400AB2DC1 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		C9F48FB818E4BAD400AB2DC1 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C9F48FB918E4BAD400AB2DC1 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -377,6 +296,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/QSLog/External",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QSLog/QSLog-Prefix.pch";
 				INFOPLIST_FILE = "QSLog/QSLog-Info.plist";
@@ -390,51 +313,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/QSLog/External",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "QSLog/QSLog-Prefix.pch";
 				INFOPLIST_FILE = "QSLog/QSLog-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		C9F48FC318E4BAD400AB2DC1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/QSLog.app/QSLog";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "QSLog/QSLog-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "QSLogTests/QSLogTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		C9F48FC418E4BAD400AB2DC1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/QSLog.app/QSLog";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "QSLog/QSLog-Prefix.pch";
-				INFOPLIST_FILE = "QSLogTests/QSLogTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
@@ -455,14 +342,6 @@
 			buildConfigurations = (
 				C9F48FC018E4BAD400AB2DC1 /* Debug */,
 				C9F48FC118E4BAD400AB2DC1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		C9F48FC218E4BAD400AB2DC1 /* Build configuration list for PBXNativeTarget "QSLogTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C9F48FC318E4BAD400AB2DC1 /* Debug */,
-				C9F48FC418E4BAD400AB2DC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

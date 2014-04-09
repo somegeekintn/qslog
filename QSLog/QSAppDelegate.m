@@ -7,40 +7,70 @@
 //
 
 #import "QSAppDelegate.h"
+#import <DropboxSDK/DropboxSDK.h>
+
+#define DROPBOX_APPKEY				@"appkey"
+#define DROPBOX_APPSECRET			@"appsecret"
+#define DROPBOX_USERID				@"userid"
+#define DROPBOX_ACCESSTOKEN			@"accesstoken"
+#define DROPBOX_ACCESSTOKENSECRET	@"accesstokensecret"
 
 @implementation QSAppDelegate
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+- (BOOL) application: (UIApplication *) inApplication
+	didFinishLaunchingWithOptions: (NSDictionary *) inLaunchOptions
 {
-    // Override point for customization after application launch.
-    return YES;
-}
-							
-- (void)applicationWillResignActive:(UIApplication *)application
-{
-	// Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-	// Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+	[self configureDropbox];
+	
+	return YES;
 }
 
-- (void)applicationDidEnterBackground:(UIApplication *)application
+- (BOOL) application: (UIApplication *) inApplication
+	openURL: (NSURL *) inURL
+	sourceApplication: (NSString *) inSourceApplication
+	annotation: (id) inAnnotation
 {
-	// Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
-	// If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+	DBSession			*session = [DBSession sharedSession];
+	BOOL				didOpen = NO;
+	
+	if ([session handleOpenURL: inURL]) {
+		if ([session isLinked]) {
+			MPOAuthCredentialConcreteStore		*credentials;
+			
+			NSLog(@"App linked successfully!");
+
+			for (NSString *userID in session.userIds) {
+				credentials = [session credentialStoreForUserId: userID];
+				NSLog(@"User ID: %@", userID);
+				NSLog(@"\taccessToken: %@", credentials.accessToken);
+				NSLog(@"\taccessTokenSecret: %@", credentials.accessTokenSecret);
+			}
+		}
+		didOpen = YES;
+	}
+	
+	return didOpen;
 }
 
-- (void)applicationWillEnterForeground:(UIApplication *)application
+- (void) configureDropbox
 {
-	// Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
-}
+    NSString			*appKey = DROPBOX_APPKEY;
+	NSString			*appSecret = DROPBOX_APPSECRET;
+	NSString			*root = kDBRootAppFolder;
+	DBSession			*session = [[DBSession alloc] initWithAppKey: appKey appSecret: appSecret root: root];
 
-- (void)applicationDidBecomeActive:(UIApplication *)application
-{
-	// Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-}
-
-- (void)applicationWillTerminate:(UIApplication *)application
-{
-	// Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+#if HAVE_DROPBOX_TOKENS
+	[session updateAccessToken: DROPBOX_ACCESSTOKEN accessTokenSecret: DROPBOX_ACCESSTOKENSECRET forUserId: DROPBOX_USERID];
+#else
+	[session unlinkAll];
+#endif
+	[DBSession setSharedSession: session];
+	
+#if HAVE_DROPBOX_TOKENS
+	if ([session isLinked]) {
+		NSLog(@"Linked to dropbox from access token");
+	}
+#endif
 }
 
 @end

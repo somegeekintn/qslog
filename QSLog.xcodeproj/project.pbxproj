@@ -344,6 +344,7 @@
 				C9F48FC118E4BAD400AB2DC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -27,7 +27,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>db-rkfrdt28g0otzv3</string>
+				<string>db-appkey</string>
 			</array>
 		</dict>
 	</array>
